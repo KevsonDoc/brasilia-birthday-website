@@ -14,7 +14,7 @@ header {
   display: flex;
   
   padding: 1rem;
-  top: 2rem;
+  top: 1rem;
 
 }
 
@@ -24,18 +24,36 @@ header ul {
   list-style: none;
   background-color: #FFFFFF;
   gap: 1rem;
-  padding: .6rem .9rem 0 .9rem;
   border-radius: 2rem;
+  padding: 0 2rem;
 }
 
-header ul li:first-child a {
+header ul li {
+  display: flex;
+  flex: 1;
+}
+
+
+header ul li:nth-child(1) {
+  margin-right: 5rem;
+}
+
+header ul li:nth-child(1) a {
+  padding: 0.4rem 0;
+}
+
+header ul li:nth-child(1) a img {
+  height: 2rem;
+}
+
+header ul li:nth-child(2) a {
   color: rgba(0, 0, 0, 1);
   border-bottom: 0.17rem solid #04a7ff;
 }
 
 header ul li a {
   display: flex;
-  padding: 0.6rem;
+  align-items: center;
 
   color: rgba(0, 0, 0, .6);
   text-decoration: none;
