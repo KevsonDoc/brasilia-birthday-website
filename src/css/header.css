@@ -1,0 +1,49 @@
+
+header {
+  position: fixed;
+  display: flex;
+  
+  top: 1.5rem;
+  z-index: 999;
+}
+
+header ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  background-color: #FFFFFF;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding: 0 3rem;
+}
+
+header ul li {
+  display: flex;
+  flex: 1;
+}
+
+header ul li:nth-child(1) {
+  margin-right: 5rem;
+}
+
+header ul li:nth-child(1) a {
+  padding: 0.4rem 0;
+}
+
+header ul li:nth-child(1) a img {
+  height: 2rem;
+}
+
+header ul li a {
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 0, 0, .6);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+a.is-visible {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 0.17rem solid #04a7ff;
+}
